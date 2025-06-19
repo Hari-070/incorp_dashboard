@@ -21,6 +21,22 @@ exports.getAllCompanies = async (req, res) => {
   }
 };
 
+//Get particular comapany
+exports.getCompanyById = async (req, res) => {
+  try {
+    const { id } = req.params; 
+    const company = await Company.findById(id); 
+
+    if (!company) {
+      return res.status(404).json({ error: "Company not found" });
+    }
+
+    res.status(200).json(company);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 //Editing an existing company
 exports.editCompany = async (req, res) => {
   try {

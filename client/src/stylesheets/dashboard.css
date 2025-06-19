@@ -1,0 +1,67 @@
+.dash {
+  padding: 2rem;
+  background-color: var(--bg-light);
+  height:85vh;
+  border-radius: 20px;
+  color: var(--text-dark);
+  box-shadow: rgba(99, 99, 99, 0.422) 0px 2px 8px 0px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dash h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.26);
+  margin: 1.5rem 0;
+}
+
+/* Companies section layout */
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Company card styling */
+.company-card {
+  background-color: var(--color-light);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-4px);
+}
+
+.company-card h1 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.5rem;
+}
+
+/* Service box inside cards */
+.service-item {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-bg-light);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-primary);
+  color: var(--text-dark);
+}
+
+.service-item p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}

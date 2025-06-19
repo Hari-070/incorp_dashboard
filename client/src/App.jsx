@@ -10,6 +10,7 @@ import MarketPlace from './pages/MarketPlace'
 import Calender from './pages/Calender'
 import Profile from './pages/Profile'
 import NotificationPage from './pages/Notification'
+import Company from './pages/Comapany'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
     <BrowserRouter>
       <div className='totalContainer'>
         <Sidebar/>
+        
       <Routes>
         <Route path='/' element={<DashBoard/>}/>
         <Route path='/entities' element={<Entities/>}/>
@@ -27,6 +29,7 @@ function App() {
         <Route path='/calender' element={<Calender/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/settings' element={<MarketPlace/>}/>
+        <Route path='/company/:id' element={<Company />} />
       </Routes>
       </div>
      </BrowserRouter>
