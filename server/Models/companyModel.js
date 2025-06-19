@@ -29,8 +29,11 @@ const DirectorSchema = new mongoose.Schema({
 // Main Company Schema
 const CompanySchema = new mongoose.Schema({
   companyName: { type: String, required: true, unique: true },
+  companyRegNo:{type: Number, required: true, unique: true},
+  companyJurisdiction: {type: String, required: true},
   services: [ServiceSchema],
   directors: [DirectorSchema],
+  agent: {type:String, required:true},
 }, {
   timestamps: true
 });
